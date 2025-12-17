@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "slotid-tooltip",
+	"version": "${version}",
+	"name": "SlotID Tooltip",
+	"description": "Displays the clickslot ID in the tooltip when hovering over any inventory slot (empty or with items). Useful for mod developers and debugging.",
+	"authors": [
+		"Aurick"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/slotid-tooltip",
+		"sources": "https://github.com/aurickk/SlotID-Tooltip"
+	},
+	"license": "MIT-0",
+	"icon": "assets/slotid-tooltip/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"clickslot.id.tooltip.SlotIDTooltipClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "slotid-tooltip.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ">=1.21.1 <1.22",
+		"java": ">=21"
+	}
+}

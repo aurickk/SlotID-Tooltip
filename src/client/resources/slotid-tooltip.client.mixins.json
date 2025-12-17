@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "clickslot.id.tooltip.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"SlotTooltipMixin",
+		"ItemTooltipMixin",
+		"CreativeInventoryTooltipMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
